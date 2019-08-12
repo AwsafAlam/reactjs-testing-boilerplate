@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
+import Youtube from './Youtube';
 
 class App extends Component {
   constructor() {
@@ -19,7 +21,10 @@ class App extends Component {
     return (
       <div>
         <p>Count: {this.state.count}</p>
-        <button className="increment" onClick={this.increment}>Increment count</button>
+        <Button variant="contained" color="primary" onClick={this.increment}>
+          Increment count
+        </Button>
+        <Youtube />
       </div>
     )
   }
